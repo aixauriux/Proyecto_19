@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Reddit - Proyecto 19</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="encabezado">
+        <h1>Mi Reddit</h1>
+        <p>Tus comunidades favoritas en un solo lugar</p>
+    </header>
+
+    <main>
+        <section class="principal">
+            <h2>Mis comunidades</h2>
+            <button id="agregar" type="button">
+                + Agregar subreddit
+            </button>
+        </section>
+
+        <section id="formulario" class="formulario oculto">
+            <h2>Agregar comunidad</h2>
+
+            <form id="formSubreddit">
+                <label for="nombre">Nombre del subreddit</label>
+
+                <input type="text" id="nombre"
+                    placeholder="Ejemplo: javascript"
+                    maxlength="23" required>
+
+                <p id="mensaje" role="alert"></p>
+
+                <button type="submit" id="guardar">
+                    Agregar comunidad
+                </button>
+
+                <button type="button" id="cancelar">
+                    Cancelar
+                </button>
+            </form>
+        </section>
+
+        <section id="carriles" aria-label="Comunidades de Reddit">
+        </section>
+
+        <p id="vacio">
+            Todavía no tienes comunidades.
+            Agrega tu primer subreddit para comenzar.
+        </p>
+    </main>
+
+    <footer>
+        <p>Proyecto 19 - Cliente Reddit</p>
+    </footer>
+
+<h2>Agregar usuario</h2>
+
+<label for="nombre">Número del usuario</label>
+
+<input type="number" id="nombre"
+       placeholder="Ejemplo: 1"
+       min="1" max="10" required>
+
+
+</body>
+</html>
